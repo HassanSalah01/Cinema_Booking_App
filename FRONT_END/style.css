@@ -103,3 +103,38 @@ pre {
 :where(dialog:modal) {
     all: revert;
 }
+
+/* //////////////////My CSS ///////////////////////// */
+
+ul {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+li {
+    background-color: grey;
+    padding: 25px;
+    width: 5vh;
+    border: 2px solid black;
+    /* display: inline-block;
+    display: 50%; */
+}
+.screenName {
+    background-color: green;
+    width: 45%;
+    margin-left: 344px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 10vh;
+}
+.one {
+    /* margin-left: 00px; */
+}
+.test0 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+}
