@@ -32,3 +32,20 @@ const createRow = (rowName, ulId, seatsNumb, reservedSeats) => {
         }
     }
 };
+
+const createCinema = (rowsNumb, seatsNumb, reservedSeats) => {
+    const alpha = "ABCDEFGHIJKLMNOPQRD";
+    const alpha2 = "abcdefghijklmno";
+    for (let i = 1; i < rowsNumb; i++) {
+        strName = `ROW ${i}`;
+        createRow(`${alpha[i - 1]} `, strName, seatsNumb, reservedSeats);
+    }
+    const div = document.createElement("div");
+    document.getElementById("main").appendChild(div);
+};
+
+const main = () => {
+    const reserverdSeats = "00000000000000000000";
+    createCinema(10, 20, reserverdSeats.split(""));
+};
+main();
